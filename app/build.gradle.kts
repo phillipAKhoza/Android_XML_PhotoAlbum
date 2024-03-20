@@ -46,6 +46,8 @@ dependencies {
     ksp("androidx.room:room-compiler:$roomVersion")
 //  Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:$roomVersion")
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
     // LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
     implementation("androidx.core:core-ktx:1.12.0")
