@@ -1,5 +1,6 @@
 package com.phillip_dev.photoalbum.db
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -17,6 +18,9 @@ interface MyImagesDao {
 
     @Delete
     suspend fun deleteImage(myImages: MyImages)
+
+
+    fun getAllImages() : LiveData<List<MyImages>>
 
 
 }
