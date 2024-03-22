@@ -6,4 +6,6 @@ import com.phillip_dev.photoalbum.model.MyImages
 
 @Database(entities = [MyImages::class], version = 1)
 abstract class MyImagesDatabase : RoomDatabase(){
+
+    abstract fun myImagesDao() : MyImagesDao
 }
