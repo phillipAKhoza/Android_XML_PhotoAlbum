@@ -8,4 +8,8 @@ import com.phillip_dev.photoalbum.model.MyImages
 abstract class MyImagesDatabase : RoomDatabase(){
 
     abstract fun myImagesDao() : MyImagesDao
+
+    companion object{
+        private var instance : MyImagesDatabase? = null
+    }
 }
