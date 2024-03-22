@@ -1,4 +1,4 @@
-package com.phillip_dev.photoalbum.db
+package com.phillip_dev.photoalbum.Model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
