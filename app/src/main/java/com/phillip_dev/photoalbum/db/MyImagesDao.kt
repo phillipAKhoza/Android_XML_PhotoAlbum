@@ -1,6 +1,7 @@
 package com.phillip_dev.photoalbum.db
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Update
 import com.phillip_dev.photoalbum.Model.MyImages
@@ -13,4 +14,9 @@ interface MyImagesDao {
 
     @Update
     suspend fun updateImage(myImages: MyImages)
+
+    @Delete
+    suspend fun deleteImage(myImages: MyImages)
+
+
 }
