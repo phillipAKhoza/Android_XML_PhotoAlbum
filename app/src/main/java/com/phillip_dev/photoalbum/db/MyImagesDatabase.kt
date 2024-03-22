@@ -1,5 +1,6 @@
 package com.phillip_dev.photoalbum.db
 
+import android.content.Context
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.phillip_dev.photoalbum.model.MyImages
@@ -11,5 +12,9 @@ abstract class MyImagesDatabase : RoomDatabase(){
 
     companion object{
         private var instance : MyImagesDatabase? = null
+
+        fun getDatabaseInstance(context :Context) : MyImagesDatabase{
+
+        }
     }
 }
