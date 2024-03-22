@@ -6,7 +6,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
-import com.phillip_dev.photoalbum.Model.MyImages
+import com.phillip_dev.photoalbum.model.MyImages
 
 @Dao
 interface MyImagesDao {

@@ -1,4 +1,4 @@
-package com.phillip_dev.photoalbum.View
+package com.phillip_dev.photoalbum.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
