@@ -23,6 +23,7 @@ abstract class MyImagesDatabase : RoomDatabase(){
                         "my_pictures"
                     ).build()
                 }
+                return instance as MyImagesDatabase
             }
         }
     }
