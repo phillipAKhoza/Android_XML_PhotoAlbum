@@ -10,4 +10,8 @@ class MyImagesViewModel(application: Application) : AndroidViewModel(application
 
     var repository : MyImagesRepository
     var imagesList : LiveData<List<MyImages>>
+
+    init {
+
+    }
 }
