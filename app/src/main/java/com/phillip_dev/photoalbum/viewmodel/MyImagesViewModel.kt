@@ -13,5 +13,6 @@ class MyImagesViewModel(application: Application) : AndroidViewModel(application
 
     init {
             repository = MyImagesRepository(application)
+            imagesList = repository.getAllImages()
     }
 }
