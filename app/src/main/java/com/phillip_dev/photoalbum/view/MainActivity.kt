@@ -13,6 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        myImagesViewModel = ViewModelProvider(this).get(MyImagesViewModel::class.java)
+        myImagesViewModel = ViewModelProvider(this)[MyImagesViewModel::class.java]
     }
 }
