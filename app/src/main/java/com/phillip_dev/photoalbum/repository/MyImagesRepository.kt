@@ -8,4 +8,8 @@ class MyImagesRepository {
 
     var myImagesDao : MyImagesDao
     var imageList : LiveData<List<MyImages>>
+
+    init {
+
+    }
 }
