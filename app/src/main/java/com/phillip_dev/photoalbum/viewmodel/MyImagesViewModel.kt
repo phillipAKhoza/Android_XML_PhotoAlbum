@@ -30,4 +30,8 @@ class MyImagesViewModel(application: Application) : AndroidViewModel(application
     fun deleteImage(myImages: MyImages)= viewModelScope.launch(Dispatchers.IO){
         repository.deleteImage(myImages)
     }
+
+    fun getAllImages() : LiveData<List<MyImages>>{
+        return imagesList
+    }
 }
