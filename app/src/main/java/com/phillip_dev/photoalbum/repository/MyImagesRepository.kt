@@ -25,4 +25,8 @@ class MyImagesRepository(application: Application) {
     suspend fun updateImage(myImages: MyImages){
         myImagesDao.updateImage(myImages)
     }
+
+    suspend fun deleteImage(myImages: MyImages){
+        myImagesDao.deleteImage(myImages)
+    }
 }
