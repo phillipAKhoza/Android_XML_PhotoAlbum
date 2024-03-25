@@ -21,4 +21,8 @@ class MyImagesRepository(application: Application) {
     suspend fun addImage(myImages: MyImages){
         myImagesDao.addImage(myImages)
     }
+
+    suspend fun updateImage(myImages: MyImages){
+        myImagesDao.updateImage(myImages)
+    }
 }
