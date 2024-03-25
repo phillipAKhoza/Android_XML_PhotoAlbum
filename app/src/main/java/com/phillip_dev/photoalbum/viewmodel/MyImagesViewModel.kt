@@ -9,5 +9,5 @@ import com.phillip_dev.photoalbum.repository.MyImagesRepository
 class MyImagesViewModel(application: Application) : AndroidViewModel(application) {
 
     var repository : MyImagesRepository
-
+    var imagesList : LiveData<List<MyImages>>
 }
