@@ -17,4 +17,8 @@ class MyImagesRepository(application: Application) {
         myImagesDao = db.myImagesDao()
         imageList = myImagesDao.getAllImages()
     }
+
+    suspend fun addImage(myImages: MyImages){
+        myImagesDao.addImage(myImages)
+    }
 }
