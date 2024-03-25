@@ -15,5 +15,6 @@ class MyImagesRepository(application: Application) {
     init {
         val db = MyImagesDatabase.getDatabaseInstance(application)
         myImagesDao = db.myImagesDao()
+        imageList = myImagesDao.getAllImages()
     }
 }
