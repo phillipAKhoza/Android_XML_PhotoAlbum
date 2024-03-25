@@ -22,4 +22,8 @@ class MyImagesViewModel(application: Application) : AndroidViewModel(application
     fun addImage(myImages: MyImages)= viewModelScope.launch(Dispatchers.IO){
         repository.addImage(myImages)
     }
+
+    fun updateImage(myImages: MyImages)= viewModelScope.launch(Dispatchers.IO){
+        repository.updateImage(myImages)
+    }
 }
