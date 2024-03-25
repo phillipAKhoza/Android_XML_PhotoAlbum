@@ -29,4 +29,8 @@ class MyImagesRepository(application: Application) {
     suspend fun deleteImage(myImages: MyImages){
         myImagesDao.deleteImage(myImages)
     }
+
+    fun getAllImages() : LiveData<List<MyImages>>{
+        return imageList
+    }
 }
