@@ -9,7 +9,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/appBarAddImage"
+        android:id="@+id/appBarPhotoAlbum"
         android:background="?attr/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:title="Photo Album"
-            android:id="@+id/toolbarAddImage"
+            android:id="@+id/toolbarPhtotoAlbum"
             app:titleTextColor="?attr/colorOnPrimary"/>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarAddImage"
+        app:layout_constraintTop_toBottomOf="@+id/appBarPhotoAlbum"
         app:layout_constraintVertical_bias="1.0"
         tools:listitem="@layout/image_item" />
 
