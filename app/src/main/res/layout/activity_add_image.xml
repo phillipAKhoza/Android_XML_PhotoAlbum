@@ -7,22 +7,33 @@
     tools:context=".view.AddImageActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarAddImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/appBarAddImage"
         android:background="?attr/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarAddImage"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/arrow_back_icon"
             app:title="Add Image"
-            android:id="@+id/toolbarAddImage"
-            app:titleTextColor="?attr/colorOnPrimary"
-            app:navigationIcon="@drawable/arrow_back_icon"/>
+            app:titleTextColor="?attr/colorOnPrimary" />
 
     </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/addImage"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uploadimage"
+        tools:layout_editor_absoluteY="71dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
