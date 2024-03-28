@@ -20,7 +20,8 @@
             android:layout_height="?attr/actionBarSize"
             app:title="Add Image"
             android:id="@+id/toolbarAddImage"
-            app:titleTextColor="?attr/colorOnPrimary"/>
+            app:titleTextColor="?attr/colorOnPrimary"
+            app:navigationIcon="@drawable/arrow_back_icon"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
