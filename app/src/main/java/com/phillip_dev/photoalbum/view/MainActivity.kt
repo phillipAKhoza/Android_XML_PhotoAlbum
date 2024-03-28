@@ -5,11 +5,13 @@ import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.phillip_dev.photoalbum.R
+import com.phillip_dev.photoalbum.databinding.ActivityMainBinding
 import com.phillip_dev.photoalbum.viewmodel.MyImagesViewModel
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var myImagesViewModel: MyImagesViewModel
+    lateinit var mainBinding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
