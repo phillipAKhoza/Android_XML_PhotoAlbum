@@ -22,5 +22,9 @@ class MainActivity : AppCompatActivity() {
         myImagesViewModel.getAllImages().observe(this, Observer {
 
         })
+
+        mainBinding.floatingBtn.setOnClickListener {
+
+        }
     }
 }
